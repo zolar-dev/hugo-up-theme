@@ -15,13 +15,15 @@ If you are creating a new website, the quickest way to get up and running is to
 clone the theme into your themes folder:
 
 ```bash
-git clone https://gitlab.com/writeonlyhugo/up-business-theme.git themes/up-business-theme
+git submodule add https://gitlab.com/writeonlyhugo/up-business-theme.git themes/up-business-theme
 ```
 
 The folder `hugoBasicExample` contains a working version of a website with the
 theme. It includes: the configuration file `config.yaml`, the content folder
 `content` and the `data` folder. It's a good idea to copy this over to the
 project folder to get an initial version of the website up and running.
+
+**Note: You must copy the assets folder to run the project without any error**
 
 ## Credits
 
