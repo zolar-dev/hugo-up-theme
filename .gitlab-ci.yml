@@ -1,0 +1,18 @@
+default:
+  image: "${CI_TEMPLATE_REGISTRY_HOST}/pages/hugo:latest"
+
+test:
+  script:
+    - cd hugoBasicExample && hugo --themesDir ../../
+  rules:
+    - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
+
+pages:
+  script:
+    - hugo
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  environment: production
