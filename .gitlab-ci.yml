@@ -1,5 +1,5 @@
 default:
-  image: "${CI_TEMPLATE_REGISTRY_HOST}/pages/hugo_extended:latest"
+  image: "${CI_TEMPLATE_REGISTRY_HOST}/pages/hugo/hugo_extended:latest"
 
 test:
   script:
