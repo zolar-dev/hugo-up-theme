@@ -12,7 +12,7 @@ pages:
     - cd hugoBasicExample && hugo --themesDir ../../
   artifacts:
     paths:
-      - public
+      - hugoBasicExample/public
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   environment: production
