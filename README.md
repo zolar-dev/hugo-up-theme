@@ -7,18 +7,12 @@ with a modern look, that can be used for companies or to showcase a product.
 
 ## Live Demo
 
-See [here](https://writeonlyhugo.gitlab.io/up-business-demo/).
+See [here](https://writeonlyhugo.gitlab.io/up-business-theme/).
 
 ## Quick Start
 
 If you are creating a new website, the quickest way to get up and running is to
-clone the demo website.
-
-```bash
-git clone https://gitlab.com/writeonlyhugo/up-business-demo.git
-```
-
-Alternatively, you can clone just the theme to your theme folder:
+clone the theme into your themes folder:
 
 ```bash
 git clone https://gitlab.com/writeonlyhugo/up-business-theme.git themes/up-business-theme

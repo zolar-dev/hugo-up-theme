@@ -9,10 +9,10 @@ test:
 
 pages:
   script:
-    - cd hugoBasicExample && hugo --themesDir ../../
+    - cd hugoBasicExample && hugo --themesDir ../../ && mv public ../public
   artifacts:
     paths:
-      - hugoBasicExample/public
+      - public
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   environment: production
