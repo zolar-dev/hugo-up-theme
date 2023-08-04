@@ -9,7 +9,7 @@ test:
 
 pages:
   script:
-    - hugo
+    - cd hugoBasicExample && hugo --themesDir ../../
   artifacts:
     paths:
       - public
