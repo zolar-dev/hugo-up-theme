@@ -7,5 +7,8 @@
 {{- $sharedJS := resources.Get "js/shared/shared.js" -}}
 {{- $sharedJS := $sharedJS | js.Build (dict "minify" "true") -}}
 
-<style type="text/css" media="all">{{ $sharedSCSS.Content | safeCSS }}</style>
-<script>{{- $sharedJS.Content | safeJS -}}</script>
+{{- $stylesheet := $sharedSCSS.Content | resources.FromString "css/style.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $stylesheet.RelPermalink }}" type="text/css" integrity="{{ $stylesheet.Data.Integrity }}" />
+
+{{- $script := $sharedJS.Content | safeJS | resources.FromString "js/script.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
