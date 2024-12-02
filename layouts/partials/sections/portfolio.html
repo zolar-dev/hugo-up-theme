@@ -1,5 +1,10 @@
-<section class="section portfolio">
+<section class="section portfolio" id="portfolio">
   <div class="container">
+    <div class="row justify-content-center pb-5">
+      <div class="col-12 col-xl-6">
+        <h3 class="fs-1 fw-bold text-center text-primary pb-3">Our main services</h3>
+      </div>
+    </div>
     {{ range .content }}
     <div class="row portfolio-feature">
       <div class="col-12 col-xl-6 d-flex flex-column justify-content-center">
@@ -17,6 +22,13 @@
         {{ with .text }}
           <p class="text-black-61 pb-3">{{ . }}</p>
         {{ end }}
+        <div class="col px-3 my-2">
+          <ul>
+          {{ range .services }}
+            <li>{{ . }}</li>
+          {{ end }}
+          </ul>
+        </div>
         <div class="">
           {{ range .buttons }}
             <a class="text-decoration-none me-3" href="{{ .url }}">{{ .label }}</a>
@@ -24,6 +36,7 @@
         </div>
       </div>
     </div>
+    <br><br>
     {{ end }}
   </div>
 </section>
