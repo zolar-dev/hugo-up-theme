@@ -1,6 +1,6 @@
-# Hugo Up Business Theme
+# Hugo Zolar Theme
 
-Up Business is a clean and modern landing page, inspired on light illustrations
+Zolar is a clean and modern landing page, inspired on light illustrations
 with a modern look, that can be used for companies or to showcase a product.
 
 ![Screenshot](https://gitlab.com/writeonlyhugo/up-business-theme/-/raw/f4e11eb377d9f7f1d8305d278538f8af05d365e5/images/screenshot.png)
@@ -41,9 +41,9 @@ version of the website with the theme.
 
 ## Credits
 
-Hugo Up Business Theme is based on a [Figma Design by Abell
+Hugo Zolar Theme is based on a [Figma Design by Abell
 Vo](https://www.figma.com/community/file/1022163547182520272).
 
 ## License 
 
-Up Business is licensed under the MIT license.
+Zolar is licensed under the MIT license.
